@@ -10,12 +10,6 @@ const OneBreedList = () => {
   const [chosedBreedArray, setchosedBreedArray] = useState([]);
   let urlChosedBreed: string = `/`;
 
-  // function capitalizeFirstLetter(breed: string) {
-  //   return breed.charAt(0).toUpperCase() + breed.slice(1);
-  // }
-
-  // // console.log(capitalizeFirstLetter(searcheBreed[0]).replace("-", " "));
-
   async function handleShowChosedBreed() {
     try {
       let url: string;
