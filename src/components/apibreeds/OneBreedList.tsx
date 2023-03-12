@@ -10,11 +10,11 @@ const OneBreedList = () => {
   const [chosedBreedArray, setchosedBreedArray] = useState([]);
   let urlChosedBreed: string = `/`;
 
-  function capitalizeFirstLetter(breed: string) {
-    return breed.charAt(0).toUpperCase() + breed.slice(1);
-  }
+  // function capitalizeFirstLetter(breed: string) {
+  //   return breed.charAt(0).toUpperCase() + breed.slice(1);
+  // }
 
-  // console.log(capitalizeFirstLetter(searcheBreed[0]).replace("-", " "));
+  // // console.log(capitalizeFirstLetter(searcheBreed[0]).replace("-", " "));
 
   async function handleShowChosedBreed() {
     try {
@@ -40,7 +40,7 @@ const OneBreedList = () => {
   return (
     <div className="chosed-breeds-box">
       {chosedBreedArray.map((element: any, index) => {
-        console.log(urlChosedBreed + element.split("/")[4]);
+       // console.log(urlChosedBreed + element.split("/")[4]);
         return (
           <Link
             to={urlChosedBreed + element.split("/")[4] + "/1"}
