@@ -33,8 +33,7 @@ const OneBreedList = () => {
 
   return (
     <div className="chosed-breeds-box">
-      {chosedBreedArray.map((element: any, index) => {
-       // console.log(urlChosedBreed + element.split("/")[4]);
+      {chosedBreedArray.map((element: any, index) => {   
         return (
           <Link
             to={urlChosedBreed + element.split("/")[4] + "/1"}
