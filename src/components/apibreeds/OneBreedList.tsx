@@ -42,7 +42,7 @@ const OneBreedList = () => {
           >
             <img key={index} className="images" src={element} alt={element} />
           </Link>
-        );
+        )
       })}
     </div>
   );

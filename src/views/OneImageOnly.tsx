@@ -1,7 +1,8 @@
 import OneBreedList from "../components/apibreeds/OneBreedList";
+
 const OneImageOnly = () => {
   return (
-    <div>    
+    <div> 
       <OneBreedList />
     </div>
   );

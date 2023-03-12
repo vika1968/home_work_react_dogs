@@ -26,7 +26,7 @@ const BreedList = () => {
   return (
     <div className="breeds-box">
       {breedArray.map((breed, index) => {
-        return <ApiBreed key={index} breedname={breed} />;
+        return <ApiBreed key={index} breedname={breed} />
       })}
     </div>
   );

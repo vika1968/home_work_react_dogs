@@ -21,7 +21,7 @@ const ApiBreed: FC<CardBreed> = ({ breedname }) => {
         to={url + breedname}
         state={[breedname, 20]}
         className="breedname"
-        onClick={handleAnchorClick}
+         onClick={handleAnchorClick}
       >
         {breedname}
       </Link>

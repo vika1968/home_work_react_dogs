@@ -26,7 +26,7 @@ const FullDogList = () => {
   return (
     <div className="img-box">
       {imageArray.map((image, index) => {
-        return <ApiDogs key={index} src={image} />;
+        return <ApiDogs key={index} src={image} />
       })}   
     </div>
   );
