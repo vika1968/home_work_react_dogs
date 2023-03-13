@@ -6,10 +6,18 @@ import FullDogList from "../apidogs/FullDogList";
 const WikiSearch = () => {
   const location = useLocation();  
   let resultItem = location.state;
+  let sURL: string 
 
   useEffect(() => {
-    window.open(
-      "https://en.wikipedia.org/wiki/" + resultItem.replace("-", "_")
+ 
+    if (resultItem.includes("-")) {
+      sURL ="https://en.wikipedia.org/w/index.php?fulltext=1&search=" + resultItem.replace("-", "+") + "&title=Special%3ASearch&ns0=1"   
+    }
+    else{
+      sURL = "https://en.wikipedia.org/wiki/" + resultItem.replace("-", "_")
+    }
+    window.open(     
+     sURL
     );
   }, [resultItem]);
 
