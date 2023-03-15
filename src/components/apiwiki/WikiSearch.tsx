@@ -43,7 +43,7 @@ function displayResultWikiSearch(searchResult: any) {
 
 export default WikiSearch;
 // --------------------------------------------------------------------------
-// ------Gili , very simple way without errors :) and without API :) Worjs fine----
+// ------Gili , very simple way without errors :) and without API :) Works fine----
 // --------------------------------------------------------------------------
 
 
