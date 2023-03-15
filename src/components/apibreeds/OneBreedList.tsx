@@ -33,12 +33,13 @@ const OneBreedList = () => {
 
   return (
     <div className="chosed-breeds-box">
-      {chosedBreedArray.map((element: any, index) => {   
+      {chosedBreedArray.map((element: any, index: any) => {   
         return (
           <Link
             to={urlChosedBreed + element.split("/")[4] + "/1"}
             state={[element.split("/")[4], 1]}
             className="one-breed-image"
+            key={index}
           >
             <img key={index} className="images" src={element} alt={element} />
           </Link>

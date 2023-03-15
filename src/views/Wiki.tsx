@@ -1,4 +1,3 @@
-import React from "react";
 import WikiSearch from "../components/apiwiki/WikiSearch";
 
 const Wiki = () => {

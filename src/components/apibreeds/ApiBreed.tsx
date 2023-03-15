@@ -1,4 +1,3 @@
-
 //Father
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
@@ -10,7 +9,7 @@ interface CardBreed {
 const ApiBreed: FC<CardBreed> = ({ breedname }) => {
   let data: any;
   const handleAnchorClick = (event: any) => {
-    data = breedname; 
+    data = breedname;
   };
 
   let url: string = `/`;
@@ -21,7 +20,7 @@ const ApiBreed: FC<CardBreed> = ({ breedname }) => {
         to={url + breedname}
         state={[breedname, 20]}
         className="breedname"
-         onClick={handleAnchorClick}
+        onClick={handleAnchorClick}
       >
         {breedname}
       </Link>

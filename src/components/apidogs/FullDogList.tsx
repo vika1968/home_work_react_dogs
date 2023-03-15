@@ -4,30 +4,28 @@ import axios from "axios";
 import ApiDogs from "./ApiDogs";
 
 const FullDogList = () => {
-
   const [imageArray, setimageArray] = useState([]);
   async function handleGetDogs() {
     try {
       const { data } = await axios.get(
         "https://dog.ceo/api/breeds/image/random/50"
-      );     
+      );
       const { message } = data;
-      setimageArray(message);      
-
+      setimageArray(message);
     } catch (error) {
       console.error(error);
     }
   }
 
-  useEffect(() => { 
-    handleGetDogs();    
+  useEffect(() => {
+    handleGetDogs();
   }, []);
 
   return (
     <div className="img-box">
       {imageArray.map((image, index) => {
-        return <ApiDogs key={index} src={image} />
-      })}   
+        return <ApiDogs key={index} src={image} />;
+      })}
     </div>
   );
 };
